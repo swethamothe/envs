@@ -38,8 +38,8 @@ jobs:
           terraform plan -no-color
           terraform apply -auto-approve
           #terraform destroy
-        env:
-          TF_WORKSPACE: "dev" 
+        #env:
+          #TF_WORKSPACE: "dev" 
 
       - name: if qa, terraform init, validate, plan, apply
         id: init
