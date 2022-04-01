@@ -6,9 +6,9 @@ terraform {
   }
   backend "remote" {
     organization = "Tyrell"
-    workspaces {
-      prefix = "ppb-"    
-    }
+    #workspaces {
+      #prefix = "ppb-"    
+    #}
   }
 }
 
