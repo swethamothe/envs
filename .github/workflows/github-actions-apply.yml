@@ -51,7 +51,7 @@ jobs:
       - name: Terraform workspace
         id: workspace
         run: | 
-          terraform workspace select qa
+          terraform workspace select ppb-qa
           terraform validate -no-color
           terraform plan -no-color
           terraform apply -auto-approve
