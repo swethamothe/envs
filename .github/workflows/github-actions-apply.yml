@@ -46,8 +46,8 @@ jobs:
           terraform workspace list
           terraform plan -no-color
           terraform apply -auto-approve
-        env:
-          TYRELL_ENVIRONMENT: dev
+        #env:
+          #TYRELL_ENVIRONMENT: dev
           
      
           
