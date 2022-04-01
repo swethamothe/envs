@@ -50,13 +50,17 @@ jobs:
           
       - name: Terraform workspace
         id: workspace
-        run: terraform workspace select qa
-          
-      - name: validate
-        run: |
+        run: | 
+          terraform workspace select qa
           terraform validate -no-color
           terraform plan -no-color
           terraform apply -auto-approve
+          
+      #- name: validate
+       # run: |
+        #  terraform validate -no-color
+         # terraform plan -no-color
+          #terraform apply -auto-approve
         #env:
           #TYRELL_ENVIRONMENT: dev
           
