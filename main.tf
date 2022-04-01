@@ -7,7 +7,7 @@ terraform {
   backend "remote" {
     organization = "Tyrell"
     workspaces {
-      prefix = "ppb-"    
+      name = os.getenv('TYRELL_ENVIRONMENT')  
     }
   }
 }
