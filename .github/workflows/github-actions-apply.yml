@@ -39,7 +39,7 @@ jobs:
           terraform apply -auto-approve
           #terraform destroy
         #env:
-          #TF_WORKSPACE: "dev" 
+          #TF_WORKSPACE: "dev"
 
       - name: if qa, terraform init, validate, plan, apply
         id: init
@@ -59,6 +59,8 @@ jobs:
           terraform apply -auto-approve
         #env:
           #TYRELL_ENVIRONMENT: dev
+          
+          
 
 
 
