@@ -38,11 +38,12 @@ jobs:
           
       - name: Terraform workspace
         id: workspace
-        run: terraform workspace select ppb-dev
+        run: terraform workspace select dev
           
       - name: validate
         run: |
           terraform validate -no-color
+          terraform workspace list
           terraform plan -no-color
           terraform apply -auto-approve
         env:
