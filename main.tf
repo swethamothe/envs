@@ -7,7 +7,7 @@ terraform {
   backend "remote" {
     organization = "Tyrell"
     workspaces {
-      name = "dev"  
+      prefix = "ppb-"  
     }
   }
 }
