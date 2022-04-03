@@ -33,8 +33,8 @@ jobs:
         id: init
         if: github.ref == 'refs/heads/dev' && github.event_name == 'push'
         run: terraform init
-        env:
-          TF_WORKSPACE: "dev" 
+        #env:
+          #TF_WORKSPACE: "dev" 
           
       - name: Terraform workspace
         id: workspace
