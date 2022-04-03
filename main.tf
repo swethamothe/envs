@@ -4,10 +4,11 @@ terraform {
       source = "hashicorp/aws"
     }
   }
-  backend "remote" {
+  cloud {
     organization = "Tyrell"
+
     workspaces {
-      prefix = "ppb-"    
+      prefix = "ppb-"
     }
   }
 }
