@@ -38,7 +38,7 @@ jobs:
           
       - name: Terraform workspace
         id: workspace
-        run: terraform workspace select dev
+        run: terraform workspace select ppb-dev
           
       - name: validate
         run: |
