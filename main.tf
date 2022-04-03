@@ -8,7 +8,7 @@ terraform {
     organization = "Tyrell"
 
     workspaces {
-      prefix = "ppb-"
+      name = "ppb-dev"
     }
   }
 }
