@@ -3,6 +3,7 @@ terraform {
     aws = {
       source = "hashicorp/aws"
     }
+	  
   }
   backend "remote" {
     organization = "Tyrell"
